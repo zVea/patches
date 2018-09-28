@@ -30,7 +30,7 @@ index d6fb3ad57..f7f575b3b 100644
          if (getPhone() != null) {
              getPhone().setEchoSuppressionEnabled();
 +
-+            if (SystemPetBoolean("persist.sys.radio.huawei", false)) {
++	if (SystemProperties.getBoolean("persist.sys.radio.huawei", false)) {
 +                getPhone().setMute(audioState.isMuted());
 +            }
          }
