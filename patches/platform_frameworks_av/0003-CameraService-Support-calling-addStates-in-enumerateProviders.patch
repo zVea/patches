@@ -51,7 +51,7 @@ index c41de8286c..1f9c78c694 100644
              ALOGI("%s: Unknown camera ID %s, a new camera is added",
                      __FUNCTION__, id.string());
  
-+   if (property_get_bool("ro.camera.isHisiCamera", false)) {
++   if (property_get_bool("persis.sys.camera.huawei", false)) {
              // First add as absent to make sure clients are notified below
              addStates(id);
 +   }
